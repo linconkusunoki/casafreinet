@@ -1,0 +1,23 @@
+.wrapper {
+  padding: 21px;  
+
+}
+
+.title {
+  text-align: left;
+  font-family: Leckerli One;
+  font-size: 24px;
+  color: #e26630;
+  margin-bottom: 7px;
+}
+
+.text {
+  font-size: 16px;
+  text-align: justify;
+  color: #333333;
+}
+
+.img {
+  position: absolute;
+  
+}

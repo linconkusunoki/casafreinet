@@ -1,0 +1,24 @@
+.wrapper {
+  text-align: left;
+  padding: 21px;
+  white-space: nowrap;
+}
+
+.title {
+  font-family: Leckerli One;
+  font-size: 38px;
+  color: #e26630;
+}
+
+.item {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #f2994a;
+  vertical-align: top;
+}
+
+.icon {
+  text-align: left;
+  display: inline-block;
+}

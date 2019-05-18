@@ -1,0 +1,7 @@
+.wrapper {
+  height: 165px;
+  background: url("../../assets/img/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

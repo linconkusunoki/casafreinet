@@ -1,0 +1,15 @@
+.wrapper {
+  display: inline-block;
+  width: 288px;
+
+}
+
+.Button {
+  height: 50px;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  border-radius: 6px;
+  background: #e26630;
+  font-size: 16px;
+}

@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.perfil {
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  border: 2px solid #f2994a;
+}
+
+.name {
+  font-family: Leckerli One;
+  font-size: 28px;
+  color: #e26630;
+}
+
+.status {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.text {
+  padding: 21px;
+  text-align: justify;
+  font-size: 18px;
+  color: #ffffff;
+  background: #f2994a;
+}

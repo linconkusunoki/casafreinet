@@ -1,0 +1,29 @@
+.wrapper {
+  text-align: center;
+  width: 83px;
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin-bottom: 1rem;
+}
+
+.iconCircle {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 83px;
+  height: 83px;
+  
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #27ae60;
+  box-sizing: border-box;
+}
+
+.textCircle {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: #f2994a;
+}
