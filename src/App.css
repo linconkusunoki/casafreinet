@@ -1,8 +1,8 @@
-*, 
-*::after, 
+*,
+*::after,
 *::before {
   /*box-sizing: border-box;*/
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .App {
@@ -37,4 +37,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media (min-width: 1200px) {
+  .App {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.Features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.List {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
 }

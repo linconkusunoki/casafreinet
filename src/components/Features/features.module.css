@@ -1,6 +1,5 @@
 .wrapper {
   text-align: center;
-  width: 83px;
   display: inline-block;
   vertical-align: top;
   width: 30%;
@@ -14,7 +13,6 @@
   justify-content: center;
   width: 83px;
   height: 83px;
-  
   margin: 0 auto;
   border-radius: 50%;
   background: #ffffff;
@@ -26,4 +24,23 @@
   margin: 2px 0 0;
   font-size: 14px;
   color: #f2994a;
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    margin-top: 50px;
+    width: 13%;
+  }
+  .iconCircle {
+    width: 150px;
+    height: 150px;
+  }
+  .textCircle {
+    margin: 10px 0 0;
+    font-size: 18px;
+  }
+  .wrapper svg {
+    width: 90px;
+    height: 90px;
+  }
 }

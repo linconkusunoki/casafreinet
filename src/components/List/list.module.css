@@ -22,3 +22,16 @@
   text-align: left;
   display: inline-block;
 }
+
+@media (min-width: 1200px) {
+  .wrapper {
+    padding: 0;
+  }
+  .item {
+    font-size: 24px;
+  }
+  .icon svg {
+    height: 35px;
+    width: 35px;
+  }
+}

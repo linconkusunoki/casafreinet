@@ -5,3 +5,10 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (min-width: 1200px) {
+  .wrapper {
+    height: 303px;
+    border-radius: 6px
+  }
+}

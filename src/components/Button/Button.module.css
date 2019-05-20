@@ -13,3 +13,9 @@
   background: #e26630;
   font-size: 16px;
 }
+
+@media (min-width: 1200px){
+  .wrapper {
+    width: 211px;
+  }
+}
