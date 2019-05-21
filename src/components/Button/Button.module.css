@@ -1,7 +1,6 @@
 .wrapper {
   display: inline-block;
   width: 288px;
-
 }
 
 .Button {
@@ -14,7 +13,7 @@
   font-size: 16px;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .wrapper {
     width: 211px;
   }

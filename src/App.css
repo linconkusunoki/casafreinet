@@ -59,7 +59,22 @@
 }
 
 .List {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
+  display: inline-block;
+  margin: 0 auto;
+  transition: margin 1000ms;
+}
+
+@media (min-width: 1200px) {
+  .List {
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 850px) {
+  .List {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
 }

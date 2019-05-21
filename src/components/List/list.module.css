@@ -1,6 +1,6 @@
 .wrapper {
   text-align: left;
-  padding: 21px;
+  padding: 16px;
   white-space: nowrap;
 }
 
@@ -21,6 +21,13 @@
 .icon {
   text-align: left;
   display: inline-block;
+}
+
+.icon,
+.item,
+.title,
+.wrapper {
+  transition: all 500ms;
 }
 
 @media (min-width: 1200px) {

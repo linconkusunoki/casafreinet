@@ -16,10 +16,6 @@
   color: #333333;
 }
 
-.img {
-
-}
-
 @media (min-width: 1200px) {
   .wrapper {
     display: flex;

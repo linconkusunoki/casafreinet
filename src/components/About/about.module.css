@@ -31,6 +31,15 @@
   background: #f2994a;
 }
 
+.wrapper,
+.name,
+.perfil,
+.status,
+.text {
+  transition: all 500ms;
+
+}
+
 @media (min-width: 1200px) {
   .wrapper::after {
     display: block;

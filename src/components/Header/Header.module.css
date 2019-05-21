@@ -27,6 +27,15 @@
   color: #333333;
 }
 
+.text,
+.container,
+.logoImg,
+.text,
+.title,
+.wrapper {
+  transition: all 800ms;
+}
+
 @media (min-width: 1200px) {
   .wrapper {
     display: flex;

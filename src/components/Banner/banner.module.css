@@ -6,6 +6,11 @@
   background-position: center;
 }
 
+.wrapper {
+  transition: all 500ms;
+
+}
+
 @media (min-width: 1200px) {
   .wrapper {
     height: 303px;

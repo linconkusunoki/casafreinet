@@ -55,8 +55,6 @@ function App() {
         />
         <Button>Conheça nossos espaços</Button>
         <Section
-          image={Boy}
-          alt="tree-boy"
           title="Como funciona?"
           text="Crianças entre 3 e 7 anos, no contraturno escolar, podem frequentar a casa em horas avulsas ou períodos. Bebês (entre 1 ano) poodem participar de sessões de brincadeiras eurísticas agendadas previamente e na companhia de 1 adulto "
         />
