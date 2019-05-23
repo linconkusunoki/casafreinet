@@ -1,0 +1,47 @@
+.wrapper {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.wrapper table {
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.wrapper th,
+.wrapper td {
+  padding: 5px 35px;
+  font-size: 18px;
+}
+
+.wrapper th {
+  color: #e26630;
+}
+
+.tableTwo td {
+  color: #767676;
+}
+
+.tableOne td,
+.tableTwo tr:last-child td {
+  color: #27ae60;
+}
+
+.title {
+  margin: 45px 0 0;
+  font-size: 30px;
+  font-family: Leckerli One;
+  color: #e26630;
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 33px;
+  }
+  .wrapper th {
+    font-size: 26px;
+  }
+  .wrapper td {
+    font-size: 22px;
+  }
+}

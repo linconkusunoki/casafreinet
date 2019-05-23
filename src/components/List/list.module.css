@@ -6,14 +6,16 @@
 
 .title {
   font-family: Leckerli One;
-  font-size: 38px;
+  /* font-size: 33px; */
   color: #e26630;
+  font-size: 28px;
 }
 
 .item {
   display: inline-block;
   margin-left: 10px;
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 16px;
   color: #f2994a;
   vertical-align: top;
 }
@@ -35,10 +37,13 @@
     padding: 0;
   }
   .item {
-    font-size: 24px;
+    font-size: 21px;
   }
   .icon svg {
     height: 35px;
     width: 35px;
+  }
+  .title {
+    font-size: 35px;
   }
 }

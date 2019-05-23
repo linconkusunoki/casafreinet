@@ -64,17 +64,39 @@
   transition: margin 1000ms;
 }
 
+.Footer {
+  margin: 35px 0 0 0;
+  display: block;
+}
+
+@media (min-width: 530px) {
+  .Footer {
+    margin: 45px 0 0;
+    display: block;
+    
+  }
+}
+
 @media (min-width: 1200px) {
-  .List {
-    margin-top: 40px;
+  .Footer {
+    display: flex;
     justify-content: space-between;
   }
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1200px) {
   .List {
-    margin-top: 20px;
+    display: flex;
+    margin: 40px 0 0;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 850px) {
+  .List {
+    margin: 20px 0 0;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 }

@@ -1,0 +1,84 @@
+.wrapper {
+  display: block;
+}
+
+.title {
+  font-family: Leckerli One;
+  font-size: 28px;
+  color: #e26630;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.form {
+  display: block;
+  margin: 10px;
+}
+
+.form label {
+  display: block;
+  color: #333333;
+}
+
+.form textarea {
+  height: 100px;
+  width: 100%;
+  border: 3px solid #f2994a;
+  border-radius: 6px;
+}
+
+.button {
+  border-radius: 6px;
+  height: 42px;
+  width: 190px;
+  background: #f2994a;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.form div {
+  width: 100%;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.form input {
+  height: 40px;
+  width: 100%;
+  border: 3px solid #f2994a;
+  border-radius: 6px;
+}
+
+@media (min-width: 530px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form div {
+    width: unset;
+  }
+  .form input {
+    width: 418px;
+  }
+  .form textarea {
+    height: 152px;
+    width: 418px;
+  }
+  .title {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 35px;
+    text-align: left;
+  }
+  .form {
+    align-items: flex-end;
+  }
+  .button {
+    width: 125px;
+  }
+}
