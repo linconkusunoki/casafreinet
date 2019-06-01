@@ -21,9 +21,6 @@ const Address = ({
   const [geoLat, setGeoLat] = React.useState(latitude);
   const [geoLon, setGeoLon] = React.useState(longitude);
 
-  console.log(geoLat, geoLon);
-  console.log(latitude, longitude);
-
   let rua = encodeURI(street.replace(/[\s]/gm, "+"));
   let cidade = encodeURI(city.replace(/[\s]/gm, "+"));
   let zip = cep.replace(/[.-]/gm, "");
@@ -48,7 +45,7 @@ const Address = ({
   function Map() {
     setGeoLat(Number(geoLat));
     setGeoLon(Number(geoLon));
-    console.log(geoLat, geoLon);
+
     return (
       <GoogleMap defaultZoom={16} defaultCenter={{ lat: geoLat, lng: geoLon }}>
         <Marker position={{ lat: geoLat, lng: geoLon }} />
