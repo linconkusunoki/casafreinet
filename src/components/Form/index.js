@@ -75,7 +75,7 @@ const Form = ({ url, title }) => {
         {bolean ? <Loading className={styles.loading} /> : Result()}
         <div>
           <label htmlFor="contato" name="name">
-            Name
+            Nome
           </label>
           <input
             value={name}
