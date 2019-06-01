@@ -3,9 +3,7 @@ import styles from "./status.module.css";
 
 function Status({ text, cor, ...props }) {
   const [show, setShow] = React.useState(true);
-  // // const [color, setColor] = React.useState(color);
-  // console.log(cor);
-  // // text === "error" ? (cor = "red") : String(cor);
+
   setTimeout(() => {
     setShow(false);
   }, 1500);

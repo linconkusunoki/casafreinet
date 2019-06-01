@@ -12,8 +12,6 @@ const Form = ({ url, title }) => {
   const [resp, setResp] = React.useState(null);
   const [color, setColor] = React.useState(null);
 
-  console.log(bolean);
-
   function Result() {
     if (resp === null) {
       return null;
@@ -21,11 +19,9 @@ const Form = ({ url, title }) => {
     return <Status className={styles.status} text={resp} cor={color} />;
   }
 
-  console.log(resp, bolean, color);
-
   async function submit() {
     await setBolean(true);
-    console.log(bolean);
+
     await axios
       .post(url, {
         name: name,
@@ -33,23 +29,19 @@ const Form = ({ url, title }) => {
         message: message
       })
       .then(function(response) {
-        // setTimeout(() => {setBolean(false)}, 2000);
-        console.log("Request Ok");
+        // console.log("Request Ok");
         setBolean(false);
         setResp("Sucesso");
         setColor("green");
       })
       .catch(function(error) {
-        console.log("Request Error");
-        // setTimeout(() => {setBolean(false)}, 2000);
+        // console.log("Request Error");
+
         setBolean(false);
         setResp("Error");
         setColor("red");
       });
-
   }
-
-  console.log(resp, bolean, color);
 
   function handlerValue(e) {
     e.preventDefault();
