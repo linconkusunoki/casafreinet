@@ -79,7 +79,7 @@ function App() {
       <About
         name="Karolyne Kusunoki"
         status="Idealizadora da Casa"
-        text="É graduada em Pedagogia pela UNESP - Marília e especialista em Educação Infantil e Pedagogia Freinet. Tem pós-graduação em Educação Especial e é Mestre em Educação. Há 4 anos é professora de Educação Infantil e desenvolve a metodologia Freinet."
+        text="É graduada em Pedagogia pela UNESP - Marília e especialista em Educação Infantil e Pedagogia Freinet. Tem pós-graduação em Educação Especial e é Mestre em Educação. Há 14 anos é professora de Educação Infantil e desenvolve a metodologia Freinet."
       />
       <Table title="Plano de Horas" body="table1" thead={headOne} />
       <Table title="Plano de Mensal" body="table2" thead={headTwo} />
