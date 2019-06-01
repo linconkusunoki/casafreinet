@@ -1,4 +1,5 @@
 .wrapper {
+  display: none;
   text-align: center;
   margin: 0 auto;
 }
@@ -32,6 +33,14 @@
   font-size: 30px;
   font-family: Leckerli One;
   color: #e26630;
+}
+
+
+
+@media (min-width: 510px) {
+  .wrapper {
+    display: block;
+  }
 }
 
 @media (min-width: 1200px) {

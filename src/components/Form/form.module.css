@@ -13,6 +13,7 @@
 .form {
   display: block;
   margin: 10px;
+  position: relative;
 }
 
 .form label {
@@ -34,10 +35,17 @@
   background: #f2994a;
   font-size: 18px;
   color: #ffffff;
+  box-shadow: -2px -2px 6px 0 #cecdcd;
+  transition: transform 300ms;
+}
+
+.button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 0 0 6px 0 #cecdcd;
 }
 
 .form div {
-  width: 100%;
+  /* width: 100%; */
   margin: 10px 0;
   text-align: left;
 }
@@ -49,15 +57,82 @@
   border-radius: 6px;
 }
 
+.form .loading {
+  background: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  margin: 0;
+  opacity: 0.8;
+  animation: faded-in 900ms ease-out;
+}
+
+@keyframes faded-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.8;
+  }
+}
+
+/* .logs {
+  color: #479a16f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.form .status {
+  background: white;
+  position: absolute;
+  display: flex; /* flex*/
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: 2;
+  opacity: 0;
+  animation: faded-out 3000ms ease-out;
+}
+
+@keyframes faded-out {
+  0% {
+    opacity: 0.8;
+  }
+
+  70% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.wrapper,
+.title,
+.form,
+.loading,
+.status {
+  transition: all 900ms;
+}
+
 @media (min-width: 530px) {
   .form {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .form div {
+  /* .form div {
     width: unset;
-  }
+  } */
   .form input {
     width: 418px;
   }

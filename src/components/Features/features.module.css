@@ -26,6 +26,12 @@
   color: #f2994a;
 }
 
+.wrapper,
+.iconCircle,
+.textCircle {
+  transition: all 900ms;
+}
+
 @media (min-width: 1200px) {
   .wrapper {
     margin-top: 50px;

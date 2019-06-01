@@ -26,15 +26,15 @@ function App() {
       <Banner />
       <Desktop>
         <div className="Features">
-          <Features Icon={MdToys} text="Brincadeira Eurística" />
-          <Features Icon={IoMdColorWand} text="Cantos da Brincadeira Faz-de-Conta" />
+          <Features Icon={MdToys} text="Brincadeira Heurística" />
+          <Features
+            Icon={IoMdColorWand}
+            text="Cantos da Brincadeira Faz de conta"
+          />
           <Features Icon={GiPalette} text="Canto Ateliê" />
           <Features Icon={FaRegLightbulb} text="Canto dos Materiais" />
-          <Features
-            Icon={FaFlask}
-            text="Canto da Experiência e Culinário"
-          />
-          <Features Icon={GoBook} text="Literatura Infatil" />
+          <Features Icon={FaFlask} text="Canto da Experiência e Culinário" />
+          <Features Icon={GoBook} text="Literatura Infantil" />
         </div>
         <div className="Section">
           <Section
@@ -47,29 +47,29 @@ function App() {
             image={Boy}
             alt="tree-boy"
             title="Como funciona?"
-            text="Crianças entre 3 e 7 anos, no contraturno escolar, podem frequentar a casa em horas avulsas ou períodos. Bebês (entre 1 ano) poodem participar de sessões de brincadeiras eurísticas agendadas previamente e na companhia de 1 adulto "
+            text="Crianças entre 3 e 7 anos, no contra turno escolar, podem frequentar a casa em horas avulsas ou períodos. Bebês (entre 1 ano) podem participar de sessões de brincadeiras heurísticas agendadas previamente e na companhia de 1 adulto."
           />
         </div>
       </Desktop>
       <Mobile>
         <Section
           title="O que é?"
-          text="É uma casa de brincadeira , cultura e arte infantil. Inspirada na pedagogia Freinet, a casa é organizada em cantos nos quais a criança escolhe o quê, quando e como quer realizar suas atividades."
+          text="É uma casa de brincadeira, cultura e arte infantil. Inspirada na pedagogia Freinet, a casa é organizada em cantos nos quais a criança escolhe o quê, quando e como quer realizar suas atividades."
         />
         <Button>Conheça nossos espaços</Button>
         <Section
           title="Como funciona?"
-          text="Crianças entre 3 e 7 anos, no contraturno escolar, podem frequentar a casa em horas avulsas ou períodos. Bebês (entre 1 ano) poodem participar de sessões de brincadeiras eurísticas agendadas previamente e na companhia de 1 adulto "
+          text="Crianças entre 3 e 7 anos, no contra turno escolar, podem frequentar a casa em horas avulsas ou períodos. Bebês (entre 1 ano) podem participar de sessões de brincadeiras heurísticas agendadas previamente e na companhia de 1 adulto."
         />
-        <Features Icon={MdToys} text="Brincadeira Eurística" />
-        <Features Icon={IoMdColorWand} text="Cantos da Brincadeira Faz-de-Conta" />
+        <Features Icon={MdToys} text="Brincadeira Heurística" />
+        <Features
+          Icon={IoMdColorWand}
+          text="Cantos da Brincadeira Faz de conta"
+        />
         <Features Icon={GiPalette} text="Canto Ateliê" />
         <Features Icon={FaRegLightbulb} text="Canto dos Materiais" />
-        <Features
-          Icon={FaFlask}
-          text="Canto da Experiência e Culinário"
-        />
-        <Features Icon={GoBook} text="Literatura Infatil" />
+        <Features Icon={FaFlask} text="Canto da Experiência e Culinário" />
+        <Features Icon={GoBook} text="Literatura Infantil" />
       </Mobile>
       <div className="List">
         <List title="Desenvolve" list={desenvolve} />
@@ -84,34 +84,39 @@ function App() {
       <Table title="Plano de Horas" body="table1" thead={headOne} />
       <Table title="Plano de Mensal" body="table2" thead={headTwo} />
       <div className="Footer">
-        <Form title="Entre em contato" />
+        <Form url="https://usebasin.com/f/bc9cfe968616" title="Entre em contato" />
         <Address
+          latitude="-22.1234094"
+          longitude="-51.4140832"
           title="Agende uma visita"
-          street="Rua Exemplo, n° 123, Bairro"
-          city="Cidade - SP"
-          cep="00.000-000"
+          street="Rua Artur Whitaker"
+          number="138"
+          bairro="Jardim Campo Belo"
+          city="Presidente Prudente"
+          state="SP"
+          cep="19.060-440"
         />
       </div>
     </div>
   );
 }
 
-const headOne = ["Hora avulsa", "Período avulso (4horas)"];
+const headOne = ["Hora avulsa", "Período avulso (4 horas)"];
 
 const headTwo = ["4 horas/mês", "8 horas/mês", "12 horas/mês"];
 
 const desenvolve = [
-  "Senso etético",
+  "Senso ético",
   "Imaginação e criação",
   "Memória e atenção",
-  "Liguagem e pensamento",
+  "Linguagem e pensamento",
   "Autocontrole da conduta"
 ];
 
 const amplia = [
   "Relações sociais",
   "Brincadeira",
-  "Expressãodas emoções",
+  "Expressão das emoções",
   "Aprendizagem",
   "Formação de vínculos afetivos"
 ];
@@ -120,7 +125,7 @@ const aprende = [
   "Fazer escolhas",
   "Socializar",
   "Pensar conscientemente",
-  "Tomar decições",
+  "Tomar decisões",
   "Conhecer a cultura"
 ];
 

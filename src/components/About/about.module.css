@@ -50,6 +50,7 @@
     bottom: 0;
     z-index: -1;
     background: #f2994a;
+    border-radius: 6px;
   }
   .wrapper {
     position: relative;
