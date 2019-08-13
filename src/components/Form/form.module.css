@@ -83,13 +83,6 @@
   }
 }
 
-/* .logs {
-  color: #479a16f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .form .status {
   background: white;
   position: absolute;
@@ -132,16 +125,16 @@
     flex-direction: column;
     align-items: center;
   }
-  /* .form div {
-    width: unset;
-  } */
+
   .form input {
     width: 418px;
   }
+
   .form textarea {
     height: 152px;
     width: 418px;
   }
+
   .title {
     font-size: 33px;
   }
@@ -152,9 +145,11 @@
     font-size: 35px;
     text-align: left;
   }
+
   .form {
     align-items: flex-end;
   }
+
   .button {
     width: 125px;
   }

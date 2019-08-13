@@ -8,12 +8,12 @@
 
 .wrapper {
   transition: all 500ms;
-
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 500px) {
   .wrapper {
     height: 303px;
-    border-radius: 6px
+    border-radius: 6px;
+    margin: 0 3%;
   }
 }

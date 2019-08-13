@@ -1,7 +1,7 @@
 *,
 *::after,
 *::before {
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
@@ -51,6 +51,12 @@
   justify-content: space-between;
 }
 
+@media (max-width: 687px) {
+  .Features {
+    flex-wrap: wrap;
+  }
+}
+
 .Section {
   display: flex;
   align-items: center;
@@ -73,7 +79,6 @@
   .Footer {
     margin: 45px 0 0;
     display: block;
-    
   }
 }
 

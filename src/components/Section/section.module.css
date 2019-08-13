@@ -16,7 +16,6 @@
   color: #333333;
 }
 
-
 @media (min-width: 1200px) {
   .wrapper {
     display: flex;
@@ -28,11 +27,12 @@
   }
 }
 
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .wrapper {
     display: flex;
   }
+
   .img {
-    display: block;
+    width: 100%;
   }
-} */
+}

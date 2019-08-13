@@ -1,56 +1,57 @@
 .wrapper {
-  display: none;
-  text-align: center;
   margin: 0 auto;
-}
-
-.wrapper table {
-  text-align: justify;
-  margin: 0 auto;
-}
-
-.wrapper th,
-.wrapper td {
-  padding: 5px 35px;
-  font-size: 18px;
-}
-
-.wrapper th {
-  color: #e26630;
-}
-
-.tableTwo td {
-  color: #767676;
-}
-
-.tableOne td,
-.tableTwo tr:last-child td {
-  color: #27ae60;
 }
 
 .title {
-  margin: 45px 0 0;
+  margin: 40px 0 0;
   font-size: 30px;
   font-family: Leckerli One;
   color: #e26630;
 }
 
+.body {
+  width: 300px;
+  margin: 0 auto;
+  padding-left: 15%;
+}
 
+.column {
+  margin: 15px 0 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
 
-@media (min-width: 510px) {
-  .wrapper {
-    display: block;
+.head {
+  white-space: nowrap;
+  font-size: 21px;
+  font-weight: bold;
+  color: #e26630;
+}
+.row {
+  margin: 5px 0 0;
+  color: #27ae60;
+}
+
+@media (min-width: 500px) {
+  .body {
+    padding: 0;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
 
 @media (min-width: 1200px) {
   .title {
     font-size: 33px;
+    margin: 50px 0 0 ;
   }
-  .wrapper th {
+  .head {
     font-size: 26px;
   }
-  .wrapper td {
+  .row {
     font-size: 22px;
   }
 }

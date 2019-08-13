@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './features.module.css'
 
-
 const Features = ({Icon, text, className}) => {
   let wrapperClass = styles.wrapper;
   if(className){

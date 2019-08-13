@@ -24,11 +24,15 @@
 }
 
 .text {
-  padding: 5px;
+  padding: 10px 3%;
   text-align: justify;
   font-size: 18px;
   color: #ffffff;
   background: #f2994a;
+}
+
+.info {
+  height: 50%;
 }
 
 .wrapper,
@@ -37,10 +41,9 @@
 .status,
 .text {
   transition: all 500ms;
-
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 887px) {
   .wrapper::after {
     display: block;
     content: "";
@@ -52,29 +55,35 @@
     background: #f2994a;
     border-radius: 6px;
   }
+
   .wrapper {
     position: relative;
     display: flex;
     flex-direction: row;
-    margin-top: 45px;
+    margin: 45px 3% 0;
   }
+
   .text {
     background: unset;
-    padding: 25px 0 0;
-    font-size: 20px;
+    padding: 45px 3% 10px;
+    font-size: 18px;
   }
+
   .container {
     text-align: left;
     width: 77%;
   }
+
   .perfil {
     width: 180px;
     height: 180px;
-    margin: 25px 40px;
+    margin: 0 3%;
   }
+
   .name {
     font-size: 35px;
   }
+
   .status {
     font-size: 21px;
   }

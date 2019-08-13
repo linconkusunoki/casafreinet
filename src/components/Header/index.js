@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Header.module.css";
 import logo from "../../assets/img/logo-karol.png";
 import Button from "../Button";
-import { Desktop } from "../responsive";
+// import { Desktop } from "../responsive";
 
 const Header = ({ title, text }) => {
   return (
@@ -14,9 +14,7 @@ const Header = ({ title, text }) => {
           <p className={styles.text}>{text}</p>
         </div>
       </div>
-      <Desktop>
-        <Button>Conheça nossos espaços</Button>
-      </Desktop>
+        <Button className={styles.button}>Conheça nossos preços</Button>
     </div>
   );
 };

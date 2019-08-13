@@ -56,7 +56,7 @@ function App() {
           title="O que é?"
           text="É uma casa de brincadeira, cultura e arte infantil. Inspirada na pedagogia Freinet, a casa é organizada em cantos nos quais a criança escolhe o quê, quando e como quer realizar suas atividades."
         />
-        <Button>Conheça nossos espaços</Button>
+        <Button>Conheça nossos preços</Button>
         <Section
           title="Como funciona?"
           text="Crianças entre 3 e 7 anos, no contra turno escolar, podem frequentar a casa em horas avulsas ou períodos. Bebês (entre 1 ano) podem participar de sessões de brincadeiras heurísticas agendadas previamente e na companhia de 1 adulto."
@@ -81,8 +81,8 @@ function App() {
         status="Idealizadora da Casa"
         text="É graduada em Pedagogia pela UNESP - Marília e especialista em Educação Infantil e Pedagogia Freinet. Tem pós-graduação em Educação Especial e é Mestre em Educação. Há 14 anos é professora de Educação Infantil e desenvolve a metodologia Freinet."
       />
-      <Table title="Plano de Horas" body="table1" thead={headOne} />
-      <Table title="Plano de Mensal" body="table2" thead={headTwo} />
+      <Table title="Plano de Horas" data={dataHora} />
+      <Table title="Plano de Mensal" data={dataMes} />
       <div className="Footer">
         <Form url="https://usebasin.com/f/bc9cfe968616" title="Entre em contato" />
         <Address
@@ -101,9 +101,49 @@ function App() {
   );
 }
 
-const headOne = ["Hora avulsa", "Período avulso (4 horas)"];
+const dataHora = [
+  {
+    head: 'Hora avulsa',
+    rows: [
+      'R$ 20,00', 'R$ 15,00'
+    ]
+  },
+  {
+    head: 'Período avulso (4 horas)',
+    rows: [
+      'R$ 55,00',
+      'R$ 40,00 (cada irmão)'
+    ]
+  }
+];
 
-const headTwo = ["4 horas/mês", "8 horas/mês", "12 horas/mês"];
+const dataMes = [
+  {
+    head: '4 horas/mês',
+    rows: [
+      'R$ 70,00',
+      'R$ 60,00 (cada irmão)',
+      'R$ 17,50 / hora'
+    ]
+  },
+  {
+    head: '8 horas/mês',
+    rows: [
+      'R$ 120,00',
+      'R$ 100,00',
+      'R$ 15,00 / hora'
+    ]
+  },
+  {
+    head: '12 horas/mês',
+    rows: [
+      'R$ 150,00',
+      'R$ 120,00 (cada irmão)',
+      'R$ 12,50 / hora'
+    ]
+  }
+]
+
 
 const desenvolve = [
   "Senso ético",

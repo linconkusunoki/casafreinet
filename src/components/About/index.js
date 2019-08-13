@@ -7,9 +7,13 @@ const About = ({ name, status, text }) => {
     <div className={styles.wrapper}>
       <img className={styles.perfil} src={photo} alt="perfil" />
       <div className={styles.container}>
-        <h2 className={styles.name}>{name}</h2>
-        <h5 className={styles.status}>{status}</h5>
-        <p className={styles.text}>{text}</p>
+        <div className={styles.info}>
+          <h2 className={styles.name}>{name}</h2>
+          <h5 className={styles.status}>{status}</h5>
+        </div>
+        <div className={styles.text}>
+          <p>{text}</p>
+        </div>
       </div>
     </div>
   );

@@ -1,10 +1,21 @@
 import React from "react";
 import styles from "./Button.module.css";
 
-const Button = ({ children }) => {
+const Button = ({ children, className, ...props }) => {
+  const handleClick = e => {
+    let el = document.getElementById('/prices')
+    e.preventDefault();
+    window.scrollTo({
+      top: el.offsetTop,
+      behavior: "smooth"
+    });
+  };
+
   return (
-    <div className={styles.wrapper}>
-      <button className={styles.Button}>{children}</button>
+    <div {...props} className={ `${styles.wrapper} ${className}` }>
+      <button onClick={handleClick} className={styles.Button}>
+        {children}
+      </button>
     </div>
   );
 };

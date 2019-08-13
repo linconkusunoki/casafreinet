@@ -36,13 +36,16 @@
   .wrapper {
     padding: 0;
   }
+
   .item {
     font-size: 21px;
   }
+
   .icon svg {
     height: 35px;
     width: 35px;
   }
+
   .title {
     font-size: 35px;
   }

@@ -36,23 +36,33 @@
   transition: all 800ms;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 687px) {
+  .button {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
   .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10px 0;
+    margin: 10px 5%;
   }
+
   .container {
     display: flex;
     align-items: center;
   }
+
   .logoImg {
     margin-right: 30px;
   }
+
   .text {
     font-size: 16px;
   }
+
   .title {
     font-size: 43px;
   }

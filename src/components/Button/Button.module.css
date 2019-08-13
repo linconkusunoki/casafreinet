@@ -1,9 +1,9 @@
 .wrapper {
   display: inline-block;
-  width: 288px;
 }
 
 .Button {
+  padding: 0 10px;
   height: 50px;
   color: #ffffff;
   width: 100%;
@@ -18,10 +18,4 @@
 .Button:hover {
   transform: translate(-2px, -2px);
   box-shadow: 0 0 6px 0 #cecdcd;
-}
-
-@media (min-width: 1200px) {
-  .wrapper {
-    width: 211px;
-  }
 }

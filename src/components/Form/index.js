@@ -29,14 +29,11 @@ const Form = ({ url, title }) => {
         message: message
       })
       .then(function(response) {
-        // console.log("Request Ok");
         setBolean(false);
         setResp("Sucesso");
         setColor("green");
       })
       .catch(function(error) {
-        // console.log("Request Error");
-
         setBolean(false);
         setResp("Error");
         setColor("red");
