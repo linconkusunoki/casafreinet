@@ -18,6 +18,7 @@ import About from "./components/About";
 import Table from "./components/Table";
 import Form from "./components/Form";
 import Address from "./components/Address";
+import Copyright from "./components/Copyright";
 
 function App() {
   return (
@@ -84,7 +85,10 @@ function App() {
       <Table title="Plano de Horas" data={dataHora} />
       <Table title="Plano de Mensal" data={dataMes} />
       <div className="Footer">
-        <Form url="https://usebasin.com/f/bc9cfe968616" title="Entre em contato" />
+        <Form
+          url="https://usebasin.com/f/bc9cfe968616"
+          title="Entre em contato"
+        />
         <Address
           latitude="-22.1234094"
           longitude="-51.4140832"
@@ -97,53 +101,36 @@ function App() {
           cep="19.060-440"
         />
       </div>
+      <Copyright />
     </div>
   );
 }
 
 const dataHora = [
   {
-    head: 'Hora avulsa',
-    rows: [
-      'R$ 20,00', 'R$ 15,00'
-    ]
+    head: "Hora avulsa",
+    rows: ["R$ 20,00", "R$ 15,00"]
   },
   {
-    head: 'Período avulso (4 horas)',
-    rows: [
-      'R$ 55,00',
-      'R$ 40,00 (cada irmão)'
-    ]
+    head: "Período avulso (4 horas)",
+    rows: ["R$ 55,00", "R$ 40,00 (cada irmão)"]
   }
 ];
 
 const dataMes = [
   {
-    head: '4 horas/mês',
-    rows: [
-      'R$ 70,00',
-      'R$ 60,00 (cada irmão)',
-      'R$ 17,50 / hora'
-    ]
+    head: "4 horas/mês",
+    rows: ["R$ 70,00", "R$ 60,00 (cada irmão)", "R$ 17,50 / hora"]
   },
   {
-    head: '8 horas/mês',
-    rows: [
-      'R$ 120,00',
-      'R$ 100,00',
-      'R$ 15,00 / hora'
-    ]
+    head: "8 horas/mês",
+    rows: ["R$ 120,00", "R$ 100,00", "R$ 15,00 / hora"]
   },
   {
-    head: '12 horas/mês',
-    rows: [
-      'R$ 150,00',
-      'R$ 120,00 (cada irmão)',
-      'R$ 12,50 / hora'
-    ]
+    head: "12 horas/mês",
+    rows: ["R$ 150,00", "R$ 120,00 (cada irmão)", "R$ 12,50 / hora"]
   }
-]
-
+];
 
 const desenvolve = [
   "Senso ético",

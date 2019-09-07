@@ -1,0 +1,23 @@
+.wrapper {
+  color: #333;
+  padding: 15px 0;
+  font-size: 15px;
+}
+
+.logo__svg {
+  width: 20px;
+}
+
+.copyright,
+.link {
+  display: inline-block;
+}
+
+.powered {
+  margin: 10px 0;
+}
+
+.link {
+  margin-left: 5px;
+  vertical-align: sub;
+}
